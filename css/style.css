@@ -3,6 +3,10 @@
   margin: 0;
   box-sizing: border-box; }
 
+.grid {
+  display: grid;
+  grid-template-areas: "header" "main" "footer"; }
+
 header .logoHertech {
   width: 8rem;
   height: 8rem; }
@@ -31,3 +35,13 @@ header .colorLink-:hover {
 
 header .menu:hover {
   border: solid 2px #063e1e !important; }
+
+main {
+  grid-area: "main";
+  width: 100%;
+  background-color: aqua; }
+
+footer {
+  grid-area: "footer";
+  width: 100%;
+  background-color: #063e1e; }
