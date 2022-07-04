@@ -74,30 +74,33 @@ main {
   main .cartaProductos {
     width: 18rem;
     height: 19rem;
-    border: 2px solid #063e1e;
     margin: 0.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: whitesmoke; }
-    main .cartaProductos .fotoProducto {
-      width: 10rem;
-      height: 10rem; }
-    main .cartaProductos .textoProductos {
-      width: 100%; }
-    main .cartaProductos .subtitulo {
-      text-align: center; }
-      main .cartaProductos .subtitulo a {
-        color: #0a944a;
-        text-decoration: none;
-        font-weight: bold; }
-    main .cartaProductos .subtitulo a:hover {
-      color: #063e1e; }
-  main ul li {
-    padding-left: 2.5rem;
-    list-style: none;
-    color: #0a944a;
-    font-weight: 500; }
+  main .cartaProductos:hover {
+    box-shadow: 1px 1px 1px 1px #8e8d8d;
+    transform: scale(1.01); }
+  main .fotoProducto {
+    width: 10rem;
+    height: 10rem; }
+  main .textoProductos {
+    width: 100%; }
+  main .subtitulo {
+    text-align: center; }
+    main .subtitulo a {
+      color: #0a944a;
+      text-decoration: none;
+      font-weight: bold; }
+  main .subtitulo a:hover {
+    color: #063e1e; }
+
+ul li {
+  padding-left: 2.5rem;
+  list-style: none;
+  color: #0a944a;
+  font-weight: 500; }
 
 footer {
   grid-area: footer;
@@ -168,3 +171,14 @@ img {
 
 h2 {
   color: green; }
+
+main p {
+  margin: 1rem 2rem;
+  text-align: center;
+  color: green; }
+  @media screen and (min-width: 768px) {
+    main p {
+      margin: 1rem 10rem; } }
+  @media screen and (min-width: 1024px) {
+    main p {
+      margin: 1rem 15rem; } }
