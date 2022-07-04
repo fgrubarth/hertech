@@ -5,15 +5,20 @@
 
 .grid {
   display: grid;
-  grid-template-areas: "header" "main" "footer"; }
+  grid-template-areas: "header" "main" "footer";
+  width: 100%; }
 
-header .logoHertech {
-  width: 8rem;
-  height: 8rem; }
-
-header .rotate-vert-center {
-  -webkit-animation: rotate-vert-center 2s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
-  animation: rotate-vert-center 2s cubic-bezier(0.455, 0.03, 0.515, 0.955) both; }
+header {
+  grid-area: header; }
+  header .logoHertech {
+    width: 8rem;
+    height: 8rem; }
+  header .redes {
+    height: 1.5rem;
+    width: 1.5rem; }
+  header .rotate-vert-center {
+    -webkit-animation: rotate-vert-center 2s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+    animation: rotate-vert-center 2s cubic-bezier(0.455, 0.03, 0.515, 0.955) both; }
 
 @-webkit-keyframes rotate-vert-center {
   0% {
@@ -30,36 +35,37 @@ header .rotate-vert-center {
   100% {
     -webkit-transform: rotateY(360deg);
     transform: rotateY(360deg); } }
-
-header .colorLink {
-  color: green !important;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: larger;
-  font-weight: bolder;
-  margin-left: 1rem; }
-
-header .colorLink- {
-  color: green !important;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: larger;
-  font-weight: bolder; }
-
-header .colorLink:hover {
-  color: #063e1e !important; }
-
-header .menu {
-  border: solid 2px green !important; }
-
-header .colorLink-:hover {
-  color: #063e1e !important; }
-
-header .menu:hover {
-  border: solid 2px #063e1e !important; }
+  header .colorLink {
+    color: green !important;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: larger;
+    font-weight: bolder;
+    margin-left: 1rem; }
+  header .colorLink- {
+    color: green !important;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: larger;
+    font-weight: bolder; }
+  header .chupala {
+    background-color: whitesmoke; }
+  header .colorLink:hover {
+    color: #063e1e !important; }
+  header .menu {
+    border: solid 2px green !important; }
+  header .colorLink-:hover {
+    color: #063e1e !important; }
+  header .menu:hover {
+    border: solid 2px #063e1e !important; }
 
 main {
-  grid-area: "main";
+  grid-area: main;
   width: 100%;
-  background-color: aqua; }
+  background-color: white; }
+  main h1 {
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #063e1e; }
   main .flexProductos {
     display: flex;
     flex-wrap: wrap;
@@ -67,17 +73,98 @@ main {
     justify-content: center; }
   main .cartaProductos {
     width: 18rem;
-    height: 18rem;
+    height: 19rem;
     border: 2px solid #063e1e;
-    margin: 1rem;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: whitesmoke; }
+    main .cartaProductos .fotoProducto {
+      width: 10rem;
+      height: 10rem; }
+    main .cartaProductos .textoProductos {
+      width: 100%; }
+    main .cartaProductos .subtitulo {
+      text-align: center; }
+      main .cartaProductos .subtitulo a {
+        color: #0a944a;
+        text-decoration: none;
+        font-weight: bold; }
+    main .cartaProductos .subtitulo a:hover {
+      color: #063e1e; }
+  main ul li {
+    padding-left: 2.5rem;
+    list-style: none;
+    color: #0a944a;
+    font-weight: 500; }
+
+footer {
+  grid-area: footer;
+  background-color: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  footer .logoHertech {
+    width: 8rem;
+    height: 8rem; }
+  footer .rotate-vert-center {
+    -webkit-animation: rotate-vert-center 2s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+    animation: rotate-vert-center 2s cubic-bezier(0.455, 0.03, 0.515, 0.955) both; }
+
+@-webkit-keyframes rotate-vert-center {
+  0% {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0); }
+  100% {
+    -webkit-transform: rotateY(360deg);
+    transform: rotateY(360deg); } }
+
+@keyframes rotate-vert-center {
+  0% {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0); }
+  100% {
+    -webkit-transform: rotateY(360deg);
+    transform: rotateY(360deg); } }
+  footer .footerTexto {
     display: flex;
     flex-direction: column;
     align-items: center; }
-  main .fotoProducto {
-    width: 10rem;
-    height: 10rem; }
+    footer .footerTexto p {
+      color: #063e1e;
+      text-align: center; }
+  footer span {
+    padding-top: 10rem;
+    font-size: 0.5rem;
+    text-align: right;
+    color: #949484; }
+    footer span a {
+      color: #949484;
+      text-decoration: none; }
+    footer span a:hover {
+      color: #063e1e; }
+  footer ul li {
+    list-style: none; }
+    footer ul li a {
+      font-size: smaller;
+      text-decoration: none;
+      color: green; }
+    footer ul li a:hover {
+      color: #063e1e; }
+  footer .redes {
+    height: 1rem;
+    width: 1rem; }
+  @media screen and (min-width: 1024px) {
+    footer {
+      flex-direction: row; }
+      footer .footerTexto {
+        display: inline-block;
+        margin-left: 20rem; } }
 
-footer {
-  grid-area: "footer";
-  width: 100%;
-  background-color: #063e1e; }
+img {
+  height: 15rem;
+  width: 15rem; }
+
+h2 {
+  color: green; }
