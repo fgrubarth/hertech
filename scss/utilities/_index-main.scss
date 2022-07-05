@@ -37,17 +37,8 @@ main{
         width: 100%;
     }
 
-    .subtitulo{
-        text-align: center;
-        a{
-        color: #0a944a;
+    a{
         text-decoration: none;
-        font-weight: bold;
-        }
-    }
-    .subtitulo a:hover{
-        color: #063e1e;
-    }
     }
     ul li{
         padding-left: 2.5rem;
@@ -55,3 +46,4 @@ main{
         color: #0a944a;
         font-weight: 500;
     } 
+}
