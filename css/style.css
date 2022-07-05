@@ -82,6 +82,8 @@ main {
   main .cartaProductos:hover {
     box-shadow: 1px 1px 1px 1px #8e8d8d;
     transform: scale(1.01); }
+  main .subtitulo {
+    text-align: center; }
   main .fotoProducto {
     width: 10rem;
     height: 10rem; }
