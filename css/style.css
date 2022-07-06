@@ -127,8 +127,7 @@ footer {
     transform: rotateY(360deg); } }
   footer .footerTexto {
     display: flex;
-    flex-direction: column;
-    align-items: center; }
+    flex-direction: column; }
     footer .footerTexto p {
       color: #063e1e;
       text-align: center; }
@@ -158,7 +157,10 @@ footer {
       flex-direction: row; }
       footer .footerTexto {
         display: inline-block;
-        margin-left: 20rem; } }
+        margin-left: 10rem; } }
+  @media screen and (min-width: 1220px) {
+    footer .footerTexto {
+      margin-left: 15rem; } }
 
 img {
   height: 15rem;
