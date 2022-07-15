@@ -169,13 +169,13 @@ img {
 h2 {
   color: green; }
 
+main .nosotros {
+  display: flex; }
+
+main .fotoKili {
+  margin: 2rem 0.5rem; }
+
 main p {
-  margin: 1rem 2rem;
+  margin: 2rem 0;
   text-align: center;
   color: green; }
-  @media screen and (min-width: 768px) {
-    main p {
-      margin: 1rem 10rem; } }
-  @media screen and (min-width: 1024px) {
-    main p {
-      margin: 1rem 15rem; } }

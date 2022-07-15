@@ -1,11 +1,20 @@
-main p{
-    margin: 1rem 2rem;
+main {
+    .nosotros{
+        display: flex;
+    }
+    .fotoKili{
+        margin: 2rem 0.5rem;
+
+    } 
+    p{
+    margin: 2rem 0;
     text-align: center;
     color: green;
     @media screen and(min-width: 768px) {
-        margin: 1rem 10rem;
+        
     }
     @media screen and(min-width: 1024px) {
-        margin: 1rem 15rem;
+       
     }
+}
 }
